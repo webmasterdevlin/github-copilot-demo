@@ -1,6 +1,6 @@
 # GitHub Copilot Demo
 
-## Norsk
+## Tilpass AI-responsene i VS Code
 
 | Funksjon            | Forskjeller                                                                                                                | Når bør det brukes                                                                                                          |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -9,7 +9,7 @@
 | Custom Chat Modes   | Konfigurerer oppgavespesifikk Chat-atferd med verktøy, definert i `.github/chatmodes` og `settings.json`.                  | Bruk for fokuserte økter som debugging av SQL i .NET eller refaktorering av React UI, ikke dekket av standardmoduser.       |
 | MCP Servers         | Utvider Copilot med eksterne verktøy/API-er via Model Context Protocol, konfigurert i VS Code for Agent/Chat modes.        | Bruk for å integrere eksterne tjenester (f.eks. tilpassede API-er) i Agent mode for avansert .NET/React SPA-automatisering. |
 
-## English
+## Customize AI responses in VS Code
 
 | Feature             | Differences                                                                                                       | Right Time to Use                                                                                               |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
