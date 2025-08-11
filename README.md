@@ -1,4 +1,5 @@
 # GitHub Copilot Demo
+- Dette er virkelig bra fordi det lar deg legge til helpers i VS Code og slutte å kopiere og lime inn de lagrede prompts dine i GitHub Chat Window.
 
 ## Tilpass AI-responsene og hjelpere i VS Code
 
