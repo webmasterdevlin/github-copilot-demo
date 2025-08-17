@@ -1,7 +1,7 @@
 # GitHub Copilot Demo
 - Dette er virkelig bra fordi det lar deg legge til helpers i VS Code og slutte å kopiere og lime inn de lagrede prompts dine i GitHub Chat Window.
 
-## Tilpass AI-responsene og hjelpere i VS Code
+## Lagrede prompts for gjenbruk av helpers på tvers av team
 
 | Funksjon            | Forskjeller                                                                                                                | Når bør det brukes                                                                                                          |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -10,7 +10,7 @@
 | Custom Chat Modes   | Hvilke verktøy den kan bruke, definert i `.github/chatmodes` og `settings.json`.                  | Lag en front-end developer chat mode, der AI-en kun kan generate og modify code relatert til front-end development. |
 | MCP Servers         | Automatisk aktiveres som en del av svaret på en brukerforespørsel, konfigurert i VS Code for Agent/Chat modes.        | Aktiver database scaffolding og querying for dynamisk å gi LLM-en relevant kontekst. |
 
-## Customize AI responses and helpers in VS Code
+## Saved prompts for reuse helpers across teams
 
 | Feature             | Differences                                                                                                       | Right Time to Use                                                                                               |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
