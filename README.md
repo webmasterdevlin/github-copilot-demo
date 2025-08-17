@@ -1,7 +1,7 @@
 # GitHub Copilot Demo
 - Dette er virkelig bra fordi det lar deg legge til helpers i VS Code og slutte å kopiere og lime inn de lagrede prompts dine i GitHub Chat Window.
 
-## Lagrede prompts for gjenbruk av helpers på tvers av team
+## lagrede prompts for gjenbrukshjelpere på tvers av team
 
 | Funksjon            | Forskjeller                                                                                                                | Når bør det brukes                                                                                                          |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
