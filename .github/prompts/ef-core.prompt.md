@@ -1,5 +1,6 @@
 ---
 mode: 'agent'
+model: Claude Sonnet 4.5
 tools: ['changes', 'search/codebase', 'edit/editFiles', 'problems', 'runCommands']
 description: 'Get best practices for Entity Framework Core'
 ---

@@ -1,6 +1,7 @@
 ---
 description: 'Provide expert React frontend engineering guidance using modern TypeScript and design patterns.'
 tools: ['changes', 'search/codebase', 'edit/editFiles', 'extensions', 'fetch', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runTasks', 'search', 'search/searchResults', 'runCommands/terminalLastCommand', 'runCommands/terminalSelection', 'testFailure', 'usages', 'vscodeAPI']
+model: Claude Sonnet 4.5
 ---
 # Expert React Frontend Engineer Mode Instructions
 

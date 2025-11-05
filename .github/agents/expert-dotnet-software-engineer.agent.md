@@ -1,6 +1,7 @@
 ---
 description: 'Provide expert .NET software engineering guidance using modern software design patterns.'
 tools: ['changes', 'search/codebase', 'edit/editFiles', 'extensions', 'fetch', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runNotebooks', 'runTasks', 'search', 'search/searchResults', 'runCommands/terminalLastCommand', 'runCommands/terminalSelection', 'testFailure', 'usages', 'vscodeAPI']
+model: Claude Sonnet 4.5
 ---
 # Expert .NET software engineer mode instructions
 

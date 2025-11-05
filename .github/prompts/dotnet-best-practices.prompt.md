@@ -1,5 +1,6 @@
 ---
 mode: 'agent'
+model: Claude Sonnet 4.5
 description: 'Ensure .NET/C# code meets best practices for the solution/project.'
 ---
 # .NET/C# Best Practices
