@@ -3,51 +3,34 @@ description: 'Guidelines for building REST APIs with ASP.NET'
 applyTo: '**/*.cs, **/*.json'
 ---
 
-# ASP.NET REST API Development
+# ASP.NET REST API Development Standards
 
-## Instruction
-- Guide users through building their first REST API using ASP.NET Core 9.
-- Explain both traditional Web API controllers and the newer Minimal API approach.
-- Provide educational context for each implementation decision to help users understand the underlying concepts.
-- Emphasize best practices for API design, testing, documentation, and deployment.
-- Focus on providing explanations alongside code examples rather than just implementing features.
+## Context
+These instructions apply when generating or modifying ASP.NET Core Web API projects.
 
-## API Design Fundamentals
+## API Design Principles
+- **Architecture**: Follow REST architectural principles. Use resource-oriented URLs and appropriate HTTP verbs (GET, POST, PUT, DELETE).
+- **Minimal APIs vs Controllers**:
+    - Use **Minimal APIs** for microservices, simple endpoints, and performance-critical scenarios.
+    - Use **Controllers** for complex application logic, when extensive filter usage is required, or for larger, structured APIs.
+- **Status Codes**: Return precise HTTP status codes (e.g., 201 Created, 204 No Content, 400 Bad Request, 404 Not Found).
+- **Content Negotiation**: Support JSON as the default content type.
 
-- Explain REST architectural principles and how they apply to ASP.NET Core APIs.
-- Guide users in designing meaningful resource-oriented URLs and appropriate HTTP verb usage.
-- Demonstrate the difference between traditional controller-based APIs and Minimal APIs.
-- Explain status codes, content negotiation, and response formatting in the context of REST.
-- Help users understand when to choose Controllers vs. Minimal APIs based on project requirements.
+## Project Structure
+- **Organization**: Organize code by feature (Feature Folders) or by domain (DDD) rather than technical layers (Controllers, Models) for larger projects.
+- **Separation of Concerns**: Maintain clear separation between API layer, Business Logic/Services, and Data Access.
+- **Configuration**: Use `appsettings.json` and Environment Variables for configuration. Use the Options pattern for strongly-typed configuration.
 
-## Project Setup and Structure
+## Implementation Standards
+- **Dependency Injection**: Use Constructor Injection for all dependencies. Avoid Service Locator pattern.
+- **Validation**: Use FluentValidation or Data Annotations for model validation.
+- **Async/Await**: Always use async/await for I/O operations. Avoid `.Result` or `.Wait()`.
+- **ActionResult**: Use `ActionResult<T>` for clear return type documentation in Swagger.
 
-- Guide users through creating a new ASP.NET Core 9 Web API project with the appropriate templates.
-- Explain the purpose of each generated file and folder to build understanding of the project structure.
-- Demonstrate how to organize code using feature folders or domain-driven design principles.
-- Show proper separation of concerns with models, services, and data access layers.
-- Explain the Program.cs and configuration system in ASP.NET Core 9 including environment-specific settings.
-
-## Building Controller-Based APIs
-
-- Guide the creation of RESTful controllers with proper resource naming and HTTP verb implementation.
-- Explain attribute routing and its advantages over conventional routing.
-- Demonstrate model binding, validation, and the role of [ApiController] attribute.
-- Show how dependency injection works within controllers.
-- Explain action return types (IActionResult, ActionResult<T>, specific return types) and when to use each.
-
-## Implementing Minimal APIs
-
-- Guide users through implementing the same endpoints using the Minimal API syntax.
-- Explain the endpoint routing system and how to organize route groups.
-- Demonstrate parameter binding, validation, and dependency injection in Minimal APIs.
-- Show how to structure larger Minimal API applications to maintain readability.
-- Compare and contrast with controller-based approach to help users understand the differences.
-
-## Data Access Patterns
-
-- Guide the implementation of a data access layer using Entity Framework Core.
-- Explain different options (SQL Server, SQLite, In-Memory) for development and production.
+## Data Access (Entity Framework Core)
+- **Context**: Use `DbContext` with constructor injection.
+- **Queries**: Use `AsNoTracking()` for read-only queries.
+- **Migrations**: Use Code-First migrations.
 - Demonstrate repository pattern implementation and when it's beneficial.
 - Show how to implement database migrations and data seeding.
 - Explain efficient query patterns to avoid common performance issues.

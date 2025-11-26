@@ -10,44 +10,39 @@ description: "Get best practices for Entity Framework Core"
 Your goal is to help me follow best practices when working with Entity Framework Core.
 
 ## Data Context Design
-
-- Keep DbContext classes focused and cohesive
-- Use constructor injection for configuration options
-- Override OnModelCreating for fluent API configuration
-- Separate entity configurations using IEntityTypeConfiguration
-- Consider using DbContextFactory pattern for console apps or tests
+- **Cohesion**: Keep `DbContext` classes focused and cohesive.
+- **Injection**: Use constructor injection for configuration options.
+- **Configuration**: Override `OnModelCreating` for fluent API configuration.
+- **Separation**: Separate entity configurations using `IEntityTypeConfiguration`.
+- **Factory**: Consider using `DbContextFactory` pattern for console apps or tests.
 
 ## Entity Design
-
-- Use meaningful primary keys (consider natural vs surrogate keys)
-- Implement proper relationships (one-to-one, one-to-many, many-to-many)
-- Use data annotations or fluent API for constraints and validations
-- Implement appropriate navigational properties
-- Consider using owned entity types for value objects
+- **Keys**: Use meaningful primary keys (consider natural vs surrogate keys).
+- **Relationships**: Implement proper relationships (one-to-one, one-to-many, many-to-many).
+- **Validation**: Use data annotations or fluent API for constraints and validations.
+- **Navigation**: Implement appropriate navigational properties.
+- **Value Objects**: Consider using owned entity types for value objects.
 
 ## Performance
-
-- Use AsNoTracking() for read-only queries
-- Implement pagination for large result sets with Skip() and Take()
-- Use Include() to eager load related entities when needed
-- Consider projection (Select) to retrieve only required fields
-- Use compiled queries for frequently executed queries
-- Avoid N+1 query problems by properly including related data
+- **NoTracking**: Use `AsNoTracking()` for read-only queries.
+- **Pagination**: Implement pagination for large result sets with `Skip()` and `Take()`.
+- **Eager Loading**: Use `Include()` to eager load related entities when needed.
+- **Projection**: Consider projection (`Select`) to retrieve only required fields.
+- **Compiled Queries**: Use compiled queries for frequently executed queries.
+- **N+1**: Avoid N+1 query problems by properly including related data.
 
 ## Migrations
-
-- Create small, focused migrations
-- Name migrations descriptively
-- Verify migration SQL scripts before applying to production
-- Consider using migration bundles for deployment
-- Add data seeding through migrations when appropriate
+- **Scope**: Create small, focused migrations.
+- **Naming**: Name migrations descriptively.
+- **Verification**: Verify migration SQL scripts before applying to production.
+- **Bundles**: Consider using migration bundles for deployment.
+- **Seeding**: Add data seeding through migrations when appropriate.
 
 ## Querying
-
-- Use IQueryable judiciously and understand when queries execute
-- Prefer strongly-typed LINQ queries over raw SQL
-- Use appropriate query operators (Where, OrderBy, GroupBy)
-- Consider database functions for complex operations
+- **Execution**: Use `IQueryable` judiciously and understand when queries execute.
+- **LINQ**: Prefer strongly-typed LINQ queries over raw SQL.
+- **Operators**: Use appropriate query operators (`Where`, `OrderBy`, `GroupBy`).
+- **Functions**: Consider database functions for complex operations.
 - Implement specifications pattern for reusable queries
 
 ## Change Tracking & Saving

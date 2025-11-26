@@ -3,51 +3,44 @@ description: 'ReactJS development standards and best practices'
 applyTo: '**/*.jsx, **/*.tsx, **/*.js, **/*.ts, **/*.css, **/*.scss'
 ---
 
-# ReactJS Development Instructions
+# ReactJS Development Standards
 
-Instructions for building high-quality ReactJS applications with modern patterns, hooks, and best practices following the official React documentation at https://react.dev.
+## Context
+These instructions apply to all ReactJS development within the project, ensuring high-quality, maintainable code.
 
 ## Project Context
-- Latest React version (React 19+)
-- TypeScript for type safety (when applicable)
-- Functional components with hooks as default
-- Follow React's official style guide and best practices
-- Use modern build tools (Vite, Create React App, or custom Webpack setup)
-- Implement proper component composition and reusability patterns
+- **Version**: Latest React version (React 19+)
+- **Language**: TypeScript for type safety (when applicable)
+- **Style**: Functional components with hooks as default
+- **Tooling**: Use modern build tools (Vite, Create React App, or custom Webpack setup)
 
 ## Development Standards
 
 ### Architecture
-- Use functional components with hooks as the primary pattern
-- Implement component composition over inheritance
-- Organize components by feature or domain for scalability
-- Separate presentational and container components clearly
-- Use custom hooks for reusable stateful logic
-- Implement proper component hierarchies with clear data flow
+- **Components**: Use functional components with hooks as the primary pattern.
+- **Composition**: Implement component composition over inheritance.
+- **Organization**: Organize components by feature or domain for scalability.
+- **Separation**: Separate presentational and container components clearly.
+- **Hooks**: Use custom hooks for reusable stateful logic.
 
 ### TypeScript Integration
-- Use TypeScript interfaces for props, state, and component definitions
-- Define proper types for event handlers and refs
-- Implement generic components where appropriate
-- Use strict mode in `tsconfig.json` for type safety
-- Leverage React's built-in types (`React.FC`, `React.ComponentProps`, etc.)
-- Create union types for component variants and states
+- **Interfaces**: Use TypeScript interfaces for props, state, and component definitions.
+- **Events**: Define proper types for event handlers and refs.
+- **Strict Mode**: Use strict mode in `tsconfig.json` for type safety.
+- **Built-in Types**: Leverage React's built-in types (`React.FC`, `React.ComponentProps`, etc.).
 
 ### Component Design
-- Follow the single responsibility principle for components
-- Use descriptive and consistent naming conventions
-- Implement proper prop validation with TypeScript or PropTypes
-- Design components to be testable and reusable
-- Keep components small and focused on a single concern
-- Use composition patterns (render props, children as functions)
+- **SRP**: Follow the single responsibility principle for components.
+- **Naming**: Use descriptive and consistent naming conventions.
+- **Validation**: Implement proper prop validation with TypeScript or PropTypes.
+- **Testing**: Design components to be testable and reusable.
 
 ### State Management
-- Use `useState` for local component state
-- Implement `useReducer` for complex state logic
-- Leverage `useContext` for sharing state across component trees
-- Consider external state management (Redux Toolkit, Zustand) for complex applications
-- Implement proper state normalization and data structures
-- Use React Query or SWR for server state management
+- **Local State**: Use `useState` for local component state.
+- **Complex State**: Implement `useReducer` for complex state logic.
+- **Shared State**: Leverage `useContext` for sharing state across component trees.
+- **External Libraries**: Consider external state management (Redux Toolkit, Zustand) for complex applications.
+- **Server State**: Use React Query or SWR for server state management.
 
 ### Hooks and Effects
 - Use `useEffect` with proper dependency arrays to avoid infinite loops
